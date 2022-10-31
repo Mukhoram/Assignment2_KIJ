@@ -32,10 +32,6 @@ def sign_file(private_key, file_name):
     with open("signature.pem", "wb") as file_signature:
         file_signature.write(signature)
         file_signature.close()
-    
-    with open("signed_file.pdf", "wb") as file_signed:
-        file_signed.write(file_readed)
-        file_signed.close()
 
 def check_command(command):
     if command == 'n' or command == 'N':
